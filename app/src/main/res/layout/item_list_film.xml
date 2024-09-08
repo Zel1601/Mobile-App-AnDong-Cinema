@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivFilmItem"
+        android:layout_width="147dp"
+        android:layout_height="141dp"
+        app:srcCompat="@drawable/family1" />
+
+    <LinearLayout
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvNameFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Film" />
+
+        <TextView
+            android:id="@+id/tvTimeFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Thời Lượng" />
+
+        <TextView
+            android:id="@+id/tvDateFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ngày Khởi Chiếu :" />
+
+        <TextView
+            android:id="@+id/tvGheFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Số Ghế" />
+
+        <TextView
+            android:id="@+id/tvPriceFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Giá Tiền" />
+
+        <TextView
+            android:id="@+id/tvTheLoaiFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Thể Loại" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="Edit"/>
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>

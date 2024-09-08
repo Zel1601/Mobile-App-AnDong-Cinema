@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/filmImage"
+        android:layout_width="95dp"
+        android:layout_height="109dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hh1"
+        />
+
+    <TextView
+        android:id="@+id/filmTitle"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filmImage"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Film Title"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

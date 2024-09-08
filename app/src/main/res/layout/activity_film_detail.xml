@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FilmDetail">
+
+
+    <ImageView
+        android:id="@+id/ivAnh"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        app:srcCompat="@drawable/hh1" />
+
+    <TextView
+        android:id="@+id/tenphim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:hint="Tên Phim"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/soghe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:hint="Số Ghế"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/thoigian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:hint="Thời Gian"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/ngaychieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Khởi Chiếu"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/theloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Thể Loại"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

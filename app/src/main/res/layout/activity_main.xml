@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameMain"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/mainTitle"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/mainHone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/homeTitle"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/mainSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/search"
+        app:layout_constraintTop_toBottomOf="@+id/mainHone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/mainSearch"
+        app:layout_constraintBottom_toTopOf="@+id/homeFilmView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeFilmView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/categoryView"
+        app:layout_constraintBottom_toTopOf="@+id/navigationLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/homeTitle"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bookingTitle"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/accountTitle"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCategory">
+
+    <ImageView
+        android:id="@+id/ivEditCategoryItem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/giadinh"
+        android:scaleType="centerCrop"
+        android:onClick="chooseImage"/> <!-- Thêm sự kiện onClick để chọn ảnh -->
+
+    <EditText
+        android:id="@+id/etEditCategoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Thể Loại"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Thể Loại"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSaveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

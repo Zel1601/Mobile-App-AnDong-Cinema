@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddFilm">
+    <ImageView
+        android:id="@+id/ivCategoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hh1"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/image_description"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText để nhập mã thể loại -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Tên Film"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- EditText để nhập tên thể loại -->
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Thời Lượng Film"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Ngày Chiếu ( Lưu ý : Thêm dấu /)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/edtGhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Số Ghế Phòng Chiếu"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Giá Film"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/edtTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mã Thể Loại"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button để thực hiện việc thêm thể loại -->
+    <Button
+        android:id="@+id/btnAddFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddCategoryClick"
+        android:text="@string/add"/>
+
+</LinearLayout>

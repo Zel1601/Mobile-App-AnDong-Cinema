@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AnDongCinema</string>
+    <string name="title00">Đăng Nhập</string>
+    <string name="username">Nhập Tên Tài Khoản</string>
+    <string name="password">Nhập Mật Khẩu</string>
+    <string name="AdminSta">Admin</string>
+    <string name="UserSta">Người dùng</string>
+    <string name="Login">Đăng Nhập</string>
+    <string name="Register">Đăng Ký</string>
+    <string name="mainTitle">An Đông Cinema</string>
+    <string name="homeTitle">Trang Chủ</string>
+    <string name="homeSearch">Tìm Kiếm...</string>
+    <string name="search">Tìm Kiếm ...</string>
+    <string name="bookingTitle">DS Đặt Vé</string>
+    <string name="accountTitle">Tài Khoản</string>
+    <string name="title">Thông Tin Người Dùng</string>
+    <string name="LSDV">Danh Sách Vé Đặt</string>
+    <string name="book">Đặt Vé</string>
+    <string name="back">Trở lại</string>
+    <string name="title01">Đặt Vé</string>
+    <string name="soghe">Số Ghế Đặt :</string>
+    <string name="thanhtoan">Thanh Toán</string>
+    <string name="checkout">Thanh Toán</string>
+    <string name="adminHome">Chào Mừng Trở Lại\nQuản Trị Viên</string>
+    <string name="AdminWelcome">Mời Chọn Chức Năng Sử Dụng</string>
+    <string name="addCategory">Danh Sách Thể Loại</string>
+    <string name="addFilm">Danh Sách Film</string>
+    <string name="DoanhThu">Doanh Thu</string>
+    <string name="image_description">Hình ảnh thể loại</string>
+    <string name="add">Thêm</string>
+    <string name="doanhThuTitle">Doanh Thu</string>
+</resources>

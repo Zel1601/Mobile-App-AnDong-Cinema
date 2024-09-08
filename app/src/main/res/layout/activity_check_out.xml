@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckOut">
+
+
+    <TextView
+        android:id="@+id/ivtitlecheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        android:background="@color/blue"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chào Mừng Quý Khách Đến Với Cửa Hàng Thanh Toán!"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tvFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Film :"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng Tiền :"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvThankYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cảm Ơn Quý Khách Đã Tin Tưởng Và Đặt Vé Tại Ứng Dụng Của Chúng Tôi!"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tvLoichuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chúc Quý Khách Xem Phim Vui Vẻ!"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginTop="20dp"
+
+        />
+
+</LinearLayout>

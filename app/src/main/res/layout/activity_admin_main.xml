@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminMainActivity">
+
+    <TextView
+        android:id="@+id/tvTitleAdm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adminHome"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:text="@string/AdminWelcome" />
+
+    <ImageView
+        android:id="@+id/ivTheLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        app:srcCompat="@drawable/hoathinh" />
+
+    <Button
+        android:id="@+id/btnAddTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addCategory"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivFilm"
+        android:layout_width="129dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/hh1" />
+
+    <Button
+            android:id="@+id/btnAddFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addFilm"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="@string/homeTitle"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnDoanhThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="@string/DoanhThu"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

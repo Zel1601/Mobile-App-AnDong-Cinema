@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListBookTicket">
+
+
+    <TextView
+        android:id="@+id/History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/LSDV"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+
+    <ListView
+        android:id="@+id/Danhsachdatve"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/homeTitle"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bookingTitle"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/accountTitle"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>
